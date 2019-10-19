@@ -1,0 +1,52 @@
+<% include template/header %>
+
+
+<body>
+
+	<nav class="navbar navbar-dark bg-dark md-4">
+		<a href="/" class="navbar-brand">Crud mongodb node.js</a>
+	</nav>
+	<div class="container">
+		<h1>Universidad de la Sierra Sur</h1>
+		<div class="row">
+			<div class="col-md-5">
+				<div class="card">
+					<div class="card-body">
+						<form action="/agregarUsuario"  method="POST">
+							<div class="form-group">
+								<input type="text" name="user" placeholder="Insertar un nombre de usuario" class="form-control">
+							</div>
+							<div class="form-group">
+								<input type="text" name="name" placeholder="Insertar un nombre" class="form-control">
+							</div>
+							<div class="form-group">
+								<input type="password" name="password" placeholder="Inserta una contraseña" class="form-control">
+							</div>
+							<button type="submit" class="btn btn-primary btn-block">
+								Agregar registro
+							</button>
+						</form>
+					</div>
+				</div>
+			</div>
+			<!-- LIST -->
+			<div class="col-md-7">
+				<table class="table table-bordered table-hover">
+					<thead>
+						<tr>
+							<th>Nombre</th>
+							<th>Apellido</th>
+							<th>informacion</th>
+							<th>Operaciones</th>
+						</tr>
+					</thead>
+					<tbody>
+
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+	
+<% include template/footer %>
+
